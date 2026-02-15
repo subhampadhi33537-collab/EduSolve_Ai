@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: edusolve-ai
+    env: python3
+    region: oregon
+    plan: free
+    buildCommand: "pip install -r requirements.txt && python -m nltk.downloader punkt stopwords wordnet"
+    startCommand: "gunicorn wsgi:app --timeout 300 --workers 2 --bind 0.0.0.0:$PORT"
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: FLASK_DEBUG
+        value: "False"
+      - key: SECRET_KEY
+        generateValue: true
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GROQ_API_URL
+        value: https://api.groq.com/openai/v1/chat/completions
+      - key: GROQ_MODEL
+        value: llama-3.1-8b-instant
+      - key: GROQ_MAX_TOKENS
+        value: "800"
+      - key: GROQ_TEMPERATURE
+        value: "0.5"

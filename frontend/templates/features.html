@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - EduSolve AI</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/navigation.css">
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+    <style>
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: var(--border-radius-xl);
+            padding: 2.5rem;
+            box-shadow: var(--shadow-lg);
+            transition: var(--transition-bounce);
+            border-top: 5px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: var(--purple-gradient);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            background: var(--purple-gradient);
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .feature-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+        
+        .feature-description {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .feature-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .feature-tag {
+            padding: 0.4rem 1rem;
+            background: var(--background-color);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        .demo-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: var(--border-radius-xl);
+            padding: 4rem 3rem;
+            color: white;
+            text-align: center;
+            margin: 4rem 0;
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .demo-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+        
+        .demo-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            margin-bottom: 2rem;
+        }
+        
+        .demo-video {
+            background: rgba(255, 255, 255, 0.1);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            border-radius: var(--border-radius-lg);
+            padding: 3rem;
+            margin: 2rem 0;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .comparison-table {
+            width: 100%;
+            background: white;
+            border-radius: var(--border-radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .comparison-table th {
+            background: var(--purple-gradient);
+            color: white;
+            padding: 1.5rem;
+            text-align: left;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        
+        .comparison-table td {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-primary);
+        }
+        
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .check-mark {
+            color: #10b981;
+            font-size: 1.5rem;
+        }
+        
+        .cross-mark {
+            color: #ef4444;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-brand">
+                <span>🎓</span>
+                <span>EduSolve AI</span>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">
+                        <span>🏠</span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/dashboard" class="nav-link">
+                        <span>📊</span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/features" class="nav-link active">
+                        <span>✨</span>
+                        <span>Features</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/about" class="nav-link">
+                        <span>ℹ️</span>
+                        <span>About</span>
+                    </a>
+                </li>
+            </ul>
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation">☰</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="page-container">
+        <!-- Page Header -->
+        <div class="section-header">
+            <h1 class="section-title">✨ Powerful Features</h1>
+            <p class="section-subtitle">Discover what makes EduSolve AI the ultimate learning companion</p>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="feature-grid">
+            <!-- Feature 1 -->
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3 class="feature-title">AI-Powered Explanations</h3>
+                <p class="feature-description">
+                    Get instant, detailed explanations powered by Groq's llama-3.1-8b-instant model. 
+                    Each answer is context-aware and tailored to your question's complexity.
+                </p>
+                <div class="feature-tags">
+                    <span class="feature-tag">Groq API</span>
+                    <span class="feature-tag">LLM</span>
+                    <span class="feature-tag">Real-time</span>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3 class="feature-title">Smart Classification</h3>
+                <p class="feature-description">
+                    Advanced ML models automatically classify your questions across 7 subjects and 
+                    3 difficulty levels using TF-IDF vectorization and Naive Bayes algorithms.
+                </p>
+                <div class="feature-tags">
+                    <span class="feature-tag">ML</span>
+                    <span class="feature-tag">NLP</span>
+                    <span class="feature-tag">Auto-detect</span>
+                </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3 class="feature-title">Learning Analytics</h3>
+                <p class="feature-description">
+                    Track your progress with comprehensive dashboards showing question history, 
+                    subject distribution, difficulty trends, and personalized learning insights.
+                </p>
+                <div class="feature-tags">
+                    <span class="feature-tag">Analytics</span>
+                    <span class="feature-tag">Tracking</span>
+                    <span class="feature-tag">Insights</span>
+                </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="feature-card">
+                <div class="feature-icon">📄</div>
+                <h3 class="feature-title">PDF Export</h3>
+                <p class="feature-description">
+                    Download beautifully formatted PDF documents with your questions and AI-generated 
+                    explanations. Perfect for offline study and sharing with classmates.
+                </p>
+                <div class="feature-tags">
+                    <span class="feature-tag">PDF</span>
+                    <span class="feature-tag">Offline</span>
+                    <span class="feature-tag">Share</span>
+                </div>
+            </div>
+
+            <!-- Feature 5 -->
+            <div class="feature-card">
+                <div class="feature-icon">🔍</div>
+                <h3 class="feature-title">Advanced Search</h3>
+                <p class="feature-description">
+                    Powerful search and filter system to quickly find past questions by subject, 
+                    difficulty level, or content. Never lose track of your learning history.
+                </p>
+                <div class="feature-tags">
+                    <span class="feature-tag">Search</span>
+                    <span class="feature-tag">Filter</span>
+                    <span class="feature-tag">Fast</span>
+                </div>
+            </div>
+
+            <!-- Feature 6 -->
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3 class="feature-title">Beautiful UI/UX</h3>
+                <p class="feature-description">
+                    Modern, responsive design with smooth animations, rainbow gradients, and 
+                    glassmorphism effects. Learning has never looked this good!
+                </p>
+                <div class="feature-tags">
+                    <span class="feature-tag">Animations</span>
+                    <span class="feature-tag">Responsive</span>
+                    <span class="feature-tag">Modern</span>
+                </div>
+            </div>
+
+            <!-- Feature 7 -->
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3 class="feature-title">Lightning Fast</h3>
+                <p class="feature-description">
+                    Optimized backend architecture with efficient caching and async processing 
+                    ensures you get answers in seconds, not minutes.
+                </p>
+                <div class="feature-tags">
+                    <span class="feature-tag">Performance</span>
+                    <span class="feature-tag">Caching</span>
+                    <span class="feature-tag">Speed</span>
+                </div>
+            </div>
+
+            <!-- Feature 8 -->
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3 class="feature-title">Secure & Private</h3>
+                <p class="feature-description">
+                    Your questions and learning data are stored locally with enterprise-grade 
+                    security. We respect your privacy and never share your data.
+                </p>
+                <div class="feature-tags">
+                    <span class="feature-tag">Security</span>
+                    <span class="feature-tag">Privacy</span>
+                    <span class="feature-tag">Local</span>
+                </div>
+            </div>
+
+            <!-- Feature 9 -->
+            <div class="feature-card">
+                <div class="feature-icon">📚</div>
+                <h3 class="feature-title">Multi-Subject Support</h3>
+                <p class="feature-description">
+                    Comprehensive coverage across Mathematics, Physics, Chemistry, Biology, 
+                    English, History, and Geography. One platform for all your subjects.
+                </p>
+                <div class="feature-tags">
+                    <span class="feature-tag">7 Subjects</span>
+                    <span class="feature-tag">Versatile</span>
+                    <span class="feature-tag">Complete</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Demo Section -->
+        <div class="demo-section">
+            <h2 class="demo-title">🎬 See It In Action</h2>
+            <p class="demo-subtitle">Experience the power of AI-assisted learning</p>
+            
+            <div class="demo-video">
+                <div class="dashboard-grid" style="text-align: left;">
+                    <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px;">
+                        <h3 style="margin-bottom: 1rem;">📝 Step 1: Ask</h3>
+                        <p>Type your question in natural language</p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px;">
+                        <h3 style="margin-bottom: 1rem;">🔄 Step 2: Process</h3>
+                        <p>AI analyzes and classifies your question</p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px;">
+                        <h3 style="margin-bottom: 1rem;">💡 Step 3: Learn</h3>
+                        <p>Receive detailed, personalized explanation</p>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="/" style="display: inline-block; padding: 1.25rem 3rem; background: white; color: var(--primary-color); text-decoration: none; border-radius: var(--border-radius-xl); font-weight: 700; font-size: 1.1rem; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); transition: var(--transition-bounce); margin-top: 2rem;">
+                🚀 Try It Now
+            </a>
+        </div>
+
+        <!-- Comparison Table -->
+        <div class="section-header">
+            <h2 class="section-title">📊 Why Choose EduSolve AI?</h2>
+            <p class="section-subtitle">See how we compare to traditional learning methods</p>
+        </div>
+
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>EduSolve AI</th>
+                    <th>Traditional Learning</th>
+                    <th>Basic Chatbots</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Instant Answers</strong></td>
+                    <td class="check-mark">✓</td>
+                    <td class="cross-mark">✗</td>
+                    <td class="check-mark">✓</td>
+                </tr>
+                <tr>
+                    <td><strong>Subject Classification</strong></td>
+                    <td class="check-mark">✓</td>
+                    <td class="cross-mark">✗</td>
+                    <td class="cross-mark">✗</td>
+                </tr>
+                <tr>
+                    <td><strong>Difficulty Assessment</strong></td>
+                    <td class="check-mark">✓</td>
+                    <td class="check-mark">✓</td>
+                    <td class="cross-mark">✗</td>
+                </tr>
+                <tr>
+                    <td><strong>Detailed Explanations</strong></td>
+                    <td class="check-mark">✓</td>
+                    <td class="check-mark">✓</td>
+                    <td style="color: var(--text-secondary);">Partial</td>
+                </tr>
+                <tr>
+                    <td><strong>Learning Analytics</strong></td>
+                    <td class="check-mark">✓</td>
+                    <td class="cross-mark">✗</td>
+                    <td class="cross-mark">✗</td>
+                </tr>
+                <tr>
+                    <td><strong>PDF Export</strong></td>
+                    <td class="check-mark">✓</td>
+                    <td class="cross-mark">✗</td>
+                    <td class="cross-mark">✗</td>
+                </tr>
+                <tr>
+                    <td><strong>Search History</strong></td>
+                    <td class="check-mark">✓</td>
+                    <td class="cross-mark">✗</td>
+                    <td class="cross-mark">✗</td>
+                </tr>
+                <tr>
+                    <td><strong>24/7 Availability</strong></td>
+                    <td class="check-mark">✓</td>
+                    <td class="cross-mark">✗</td>
+                    <td class="check-mark">✓</td>
+                </tr>
+                <tr>
+                    <td><strong>Cost</strong></td>
+                    <td style="color: #10b981; font-weight: 700;">Free</td>
+                    <td style="color: #ef4444; font-weight: 700;">$$$$</td>
+                    <td style="color: #10b981; font-weight: 700;">Free/Paid</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Call to Action -->
+        <div style="text-align: center; margin-top: 4rem;">
+            <h2 style="font-size: 2rem; color: var(--text-primary); margin-bottom: 1rem;">Ready to Transform Your Learning?</h2>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 2rem;">
+                Join thousands of students already using EduSolve AI to ace their exams!
+            </p>
+            <a href="/" style="display: inline-block; padding: 1.25rem 3rem; background: var(--purple-gradient); color: white; text-decoration: none; border-radius: var(--border-radius-xl); font-weight: 700; font-size: 1.1rem; box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4); transition: var(--transition-bounce);">
+                ✨ Get Started Free
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 3rem 2rem; background: linear-gradient(135deg, #1e293b 0%, #334155 100%); color: white; margin-top: 4rem;">
+        <p style="font-size: 1rem; margin-bottom: 0.5rem;">🎓 <strong>EduSolve AI</strong> - Your AI Learning Companion</p>
+        <p style="font-size: 0.9rem; opacity: 0.8;">Powered by Groq AI & Machine Learning | © 2026 All Rights Reserved</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/static/js/dashboard.js"></script>
+</body>
+</html>

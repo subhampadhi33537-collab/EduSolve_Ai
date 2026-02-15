@@ -1,0 +1,280 @@
+[
+  {
+    "id": "2026-02-15T21:25:14.362134",
+    "timestamp": "2026-02-15T21:25:14.362157",
+    "question": "what is python",
+    "processed_text": "python",
+    "tokens": [
+      "python"
+    ],
+    "subject": "Computer Science",
+    "subject_confidence": 0.65,
+    "difficulty": "Easy",
+    "difficulty_confidence": 0.5251611347805807,
+    "explanation": "**What is Python?**\n\n### Clear and Concise Explanation\n\nPython is a high-level, easy-to-learn programming language used for a wide range of applications, including web development, data analysis, artificial intelligence, and more. It's a versatile language that allows developers to write clean, efficient, and readable code.\n\n### Step-by-Step Breakdown\n\n1. **High-Level Language**: Python is a high-level language, meaning it abstracts away many low-level details, allowing developers to focus on the logic of their program without worrying about memory management, etc.\n2. **Easy to Learn**: Python has a simple syntax and is relatively easy to learn, making it a great language for beginners.\n3. **Versatile**: Python can be used for various applications, such as:\n\t* Web development (e.g., Django, Flask)\n\t* Data analysis and science (e.g., NumPy, Pandas)\n\t* Artificial intelligence and machine learning (e.g., TensorFlow, Keras)\n\t* Automation and scripting\n4. **Large Community**: Python has a massive and active community, with many libraries, frameworks, and tools available to help developers.\n\n### Key Concepts Involved\n\n* **Variables**: Python uses variables to store and manipulate data.\n* **Data Types**: Python supports various data types, including integers, floats, strings, lists, dictionaries, etc.\n* **Control Structures**: Python has control structures like if-else statements, for loops, and while loops to control the flow of a program.\n* **Functions**: Python functions are reusable blocks of code that can be called multiple times.\n\n### Example or Analogy\n\nImagine you're writing a recipe for your favorite dish. You need to follow a series of steps to prepare the ingredients, cook the food, and serve it. Python is like a recipe book where you write a series of instructions (code) to achieve a specific goal (cooking the dish). Just as a recipe book has a clear structure and steps, Python code has a clear syntax and structure.\n\n### Common Mistakes to Avoid\n\n* **Indentation**: Python uses indentation (spaces or tabs) to define code blocks. Make sure to use consistent indentation throughout your code.\n* **Syntax Errors**: Python is sensitive to syntax errors, such as missing or mismatched brackets, parentheses, or quotes. Double-check your code for errors.\n* **Variable Naming**: Use descriptive and meaningful variable names to avoid confusion and make your code easier to understand.\n\nI hope this explanation helps you understand what Python is and how",
+    "model_used": "llama-3.1-8b-instant",
+    "tokens_used": 642
+  },
+  {
+    "id": "2026-02-15T21:32:00.576831",
+    "timestamp": "2026-02-15T21:32:00.576842",
+    "question": "what is python",
+    "processed_text": "python",
+    "tokens": [
+      "python"
+    ],
+    "subject": "Computer Science",
+    "subject_confidence": 0.65,
+    "difficulty": "Easy",
+    "difficulty_confidence": 0.5251611347805807,
+    "explanation": "**What is Python?**\n\n**Clear and Concise Explanation**\n\nPython is a high-level programming language that is easy to learn and use. It's a versatile language that can be used for various purposes such as web development, data analysis, artificial intelligence, and more. Python is often used by beginners and professionals alike due to its simplicity and flexibility.\n\n**Step-by-Step Breakdown**\n\n1. **What is a programming language?** A programming language is a set of instructions that a computer can understand. Think of it like a recipe book for your computer.\n2. **What makes Python special?** Python is a high-level language, which means it's easy to read and write. It's also an interpreted language, which means you don't need to compile the code before running it.\n3. **What can Python be used for?** Python can be used for:\n\t* Web development (building websites and web applications)\n\t* Data analysis (working with data and statistics)\n\t* Artificial intelligence (building intelligent systems)\n\t* Automation (automating tasks and processes)\n\t* And many more!\n\n**Key Concepts Involved**\n\n1. **Variables**: A variable is a container that holds a value. In Python, you can assign a value to a variable using the assignment operator (=).\n2. **Data types**: Python has several data types, such as integers, floats, strings, and lists. Each data type has its own set of operations and behaviors.\n3. **Control structures**: Control structures are used to control the flow of your program. Examples include if-else statements, for loops, and while loops.\n\n**Example or Analogy**\n\nThink of Python like a recipe book. You write a recipe (code) that the computer can understand, and it follows the instructions to produce the desired result (output). Just like how you need to follow a recipe to make a cake, a computer needs to follow your code to produce the desired output.\n\n**Example Code**\n\nHere's a simple example of Python code that prints \"Hello, World!\" to the screen:\n```python\nprint(\"Hello, World!\")\n```\n**Common Mistakes to Avoid**\n\n1. **Indentation**: Python uses indentation (spaces or tabs) to define the structure of your code. Make sure to use consistent indentation throughout your code.\n2. **Syntax errors**: Python is sensitive to syntax errors, such as missing or mismatched brackets, parentheses, or quotes. Make sure to double-check your code for syntax errors.\n3. **Variable naming**:",
+    "model_used": "llama-3.1-8b-instant",
+    "tokens_used": 642
+  },
+  {
+    "id": "2026-02-15T21:32:57.207826",
+    "timestamp": "2026-02-15T21:32:57.207845",
+    "question": "what is c programming",
+    "processed_text": "c programming",
+    "tokens": [
+      "c",
+      "programming"
+    ],
+    "subject": "Computer Science",
+    "subject_confidence": 0.9571341240194844,
+    "difficulty": "Easy",
+    "difficulty_confidence": 0.5251611347805808,
+    "explanation": "**What is C Programming?**\n\n**Clear and Concise Explanation:**\n\nC programming is a high-level, general-purpose programming language developed by Dennis Ritchie in 1972. It is a fundamental language in the world of computer science, widely used for building operating systems, embedded systems, and other applications. C programming is known for its efficiency, portability, and flexibility, making it a popular choice for developers.\n\n**Step-by-Step Breakdown:**\n\n1. **Variables and Data Types:** In C programming, you can declare variables to store data using data types such as int, float, char, and double.\n2. **Operators:** C programming uses various operators for arithmetic, comparison, logical, and assignment operations.\n3. **Control Structures:** C programming uses control structures like if-else statements, switch statements, for loops, and while loops to control the flow of the program.\n4. **Functions:** C programming allows you to define functions to perform specific tasks, which can be reused throughout the program.\n5. **Input/Output:** C programming provides functions for input/output operations, such as scanf() and printf().\n\n**Key Concepts Involved:**\n\n1. **Variables and Data Types:** Understanding the different data types and how to declare variables.\n2. **Operators:** Familiarity with arithmetic, comparison, logical, and assignment operators.\n3. **Control Structures:** Understanding the use of if-else statements, switch statements, for loops, and while loops.\n4. **Functions:** Defining and using functions to perform specific tasks.\n5. **Input/Output:** Understanding how to use functions for input/output operations.\n\n**Example or Analogy:**\n\nImagine you're writing a recipe for your favorite dish. You need to follow a set of instructions (control structures) to prepare the ingredients (variables and data types), mix them together (operators), and finally, serve the dish (functions). In C programming, you would write a program to execute these steps, using variables, operators, and control structures to guide the process.\n\n**Common Mistakes to Avoid:**\n\n1. **Incorrect Variable Declaration:** Make sure to declare variables with the correct data type.\n2. **Syntax Errors:** Pay attention to syntax errors, such as missing semicolons or mismatched brackets.\n3. **Logical Errors:** Test your program thoroughly to avoid logical errors, such as incorrect loop conditions or function calls.\n4. **Memory Management:** Understand how to manage memory in C programming, including using pointers and dynamic memory allocation.\n\nBy following",
+    "model_used": "llama-3.1-8b-instant",
+    "tokens_used": 643
+  },
+  {
+    "id": "2026-02-15T21:39:41.376620",
+    "timestamp": "2026-02-15T21:39:41.376638",
+    "question": "what is biology?",
+    "processed_text": "biology",
+    "tokens": [
+      "biology"
+    ],
+    "subject": "Biology",
+    "subject_confidence": 0.65,
+    "difficulty": "Easy",
+    "difficulty_confidence": 0.5251611347805807,
+    "explanation": "**What is Biology?**\n\n**Clear and Concise Explanation:**\n\nBiology is the scientific study of living organisms and their interactions with the environment. It's a vast field that explores the structure, function, growth, evolution, distribution, and taxonomy of all living things, from tiny microorganisms to complex ecosystems.\n\n**Step-by-Step Breakdown:**\n\n1. **Living Organisms:** Biology focuses on anything that is alive, such as plants, animals, fungi, and microorganisms like bacteria and viruses.\n2. **Interactions with Environment:** Biology also examines how living organisms interact with their surroundings, including other living things, non-living factors like water and air, and physical factors like temperature and light.\n3. **Structure and Function:** Biology investigates the internal and external structures of living organisms, as well as how these structures work together to maintain life processes.\n4. **Growth and Development:** Biology looks at how living organisms grow, develop, and change over time, including birth, growth, reproduction, and death.\n5. **Evolution and Diversity:** Biology explores the history of life on Earth, including how living organisms have evolved and diversified over time.\n6. **Distribution and Taxonomy:** Biology examines the distribution of living organisms in different habitats and ecosystems, and how they are classified and grouped into categories.\n\n**Key Concepts Involved:**\n\n* Cells: the basic building blocks of life\n* Genetics: the study of heredity and variation\n* Evolution: the process of change in living organisms over time\n* Ecosystems: communities of living and non-living things that interact with each other\n* Adaptation: the process of living organisms adjusting to their environment\n\n**Example or Analogy:**\n\nImagine a garden as a living ecosystem. Biology is like being a gardener who studies the different plants, insects, and microorganisms that live in the garden, how they interact with each other, and how they adapt to their environment. Just as a gardener needs to understand the needs of each plant to keep the garden healthy, biologists need to understand the needs of living organisms to understand how they function and interact with their environment.\n\n**Common Mistakes to Avoid:**\n\n* Confusing biology with other sciences like chemistry or physics.\n* Thinking that biology only deals with humans or animals, when in fact it encompasses all living things.\n* Assuming that biology is only about studying living organisms in a laboratory setting, when in fact it involves fieldwork, observations, and experiments in various environments.\n\nBy understanding these key concepts",
+    "model_used": "llama-3.1-8b-instant",
+    "tokens_used": 641
+  },
+  {
+    "id": "2026-02-15T21:48:11.833774",
+    "timestamp": "2026-02-15T21:48:11.833791",
+    "question": "what is machine learning",
+    "processed_text": "machine learning",
+    "tokens": [
+      "machine",
+      "learning"
+    ],
+    "subject": "Computer Science",
+    "subject_confidence": 0.9815214870812761,
+    "difficulty": "Easy",
+    "difficulty_confidence": 0.5251611347805807,
+    "explanation": "What is Machine Learning?\nMachine learning is a subset of artificial intelligence that enables computers to learn from data without being explicitly programmed. It involves training algorithms on large datasets to make predictions, classify objects, or make decisions based on patterns and relationships in the data. This process allows machines to improve their performance over time.\n\nKey Points:\n1. **Data-Driven**: Machine learning relies on large datasets to learn and improve its performance.\n2. **Algorithmic**: Machine learning algorithms are designed to analyze and process data to make predictions or decisions.\n3. **Self-Improvement**: Machine learning models can adapt and improve their performance over time as they receive more data and feedback.\n\nExample: A simple example of machine learning is a virtual assistant like Siri or Alexa, which learns to recognize and respond to voice commands based on the data it receives from users.",
+    "model_used": "llama-3.1-8b-instant",
+    "tokens_used": 294
+  },
+  {
+    "id": "2026-02-15T21:55:15.461718",
+    "timestamp": "2026-02-15T21:55:15.461728",
+    "question": "what is photosynthesis",
+    "processed_text": "photosynthesis",
+    "tokens": [
+      "photosynthesis"
+    ],
+    "subject": "Biology",
+    "subject_confidence": 0.65,
+    "difficulty": "Easy",
+    "difficulty_confidence": 0.5251611347805807,
+    "explanation": "What is photosynthesis?\nPhotosynthesis is the process by which plants, algae, and some bacteria make their own food using sunlight, water, and carbon dioxide. This process produces glucose, a type of sugar that gives them energy, and oxygen as a byproduct.\n\nKey Points:\n1. Photosynthesis occurs in specialized parts of plants called chloroplasts.\n2. Chlorophyll, a green pigment, helps absorb sunlight for photosynthesis.\n3. Photosynthesis is essential for life on Earth as it produces oxygen for humans and other animals to breathe.",
+    "model_used": "llama-3.1-8b-instant",
+    "tokens_used": 251
+  },
+  {
+    "id": "2026-02-15T21:55:43.693322",
+    "timestamp": "2026-02-15T21:55:43.693332",
+    "question": "what is gravity",
+    "processed_text": "gravity",
+    "tokens": [
+      "gravity"
+    ],
+    "subject": "Physics",
+    "subject_confidence": 0.65,
+    "difficulty": "Easy",
+    "difficulty_confidence": 0.5251611347805807,
+    "explanation": "What is gravity?\nGravity is a force that pulls objects towards each other. It is the reason why things fall down towards the ground instead of floating away. Gravity is also what keeps planets in orbit around their stars.\n\nKey Points:\n1. Gravity is a universal force that affects everything with mass.\n2. The strength of gravity depends on the mass of the objects and the distance between them.\n3. Gravity is what keeps us and other objects on the ground.",
+    "model_used": "llama-3.1-8b-instant",
+    "tokens_used": 232
+  },
+  {
+    "id": "2026-02-15T21:55:46.497851",
+    "timestamp": "2026-02-15T21:55:46.497860",
+    "question": "explain mitosis",
+    "processed_text": "explain mitosis",
+    "tokens": [
+      "explain",
+      "mitosis"
+    ],
+    "subject": "Physics",
+    "subject_confidence": 0.3944173283336323,
+    "difficulty": "Easy",
+    "difficulty_confidence": 0.5419743955100901,
+    "explanation": "What is mitosis?\nMitosis is a process of cell division that results in two genetically identical daughter cells from a single parent cell. It occurs in somatic cells, which are non-reproductive cells. Mitosis is essential for growth, repair, and maintenance of tissues.\n\nKey Points:\n1. Mitosis consists of four stages: prophase, metaphase, anaphase, and telophase.\n2. During mitosis, the DNA is replicated and divided equally between the two daughter cells.\n3. Mitosis ensures that each daughter cell receives a complete set of chromosomes.\n\nExample: When you cut your skin, mitosis helps to repair the damaged tissue by producing new skin cells.",
+    "model_used": "llama-3.1-8b-instant",
+    "tokens_used": 279
+  },
+  {
+    "id": "2026-02-15T21:55:49.665095",
+    "timestamp": "2026-02-15T21:55:49.665109",
+    "question": "what is AI",
+    "processed_text": "ai",
+    "tokens": [
+      "ai"
+    ],
+    "subject": "Geography",
+    "subject_confidence": 0.20781072674112205,
+    "difficulty": "Easy",
+    "difficulty_confidence": 0.5251611347805808,
+    "explanation": "What is AI?\nArtificial Intelligence (AI) is a computer system that can think and learn like a human being. It uses algorithms and data to make decisions and solve problems. AI can perform tasks that typically require human intelligence, such as recognizing images, understanding speech, and making predictions.\n\nKey Points:\n1. AI is a computer system that can think and learn.\n2. AI uses algorithms and data to make decisions.\n3. AI can perform tasks that typically require human intelligence.",
+    "model_used": "llama-3.1-8b-instant",
+    "tokens_used": 237
+  },
+  {
+    "id": "2026-02-15T21:58:04.390442",
+    "timestamp": "2026-02-15T21:58:04.390458",
+    "question": "what is python programming?",
+    "processed_text": "python programming",
+    "tokens": [
+      "python",
+      "programming"
+    ],
+    "subject": "Computer Science",
+    "subject_confidence": 0.9571341240194844,
+    "difficulty": "Easy",
+    "difficulty_confidence": 0.5251611347805807,
+    "explanation": "What is Python programming?\nPython programming is a way of writing instructions that computers can understand. It's a high-level language that allows developers to create software, apps, and websites using simple and readable code. Python is widely used for various purposes, including data analysis, machine learning, and web development.\n\nKey Points:\n1. Python is a high-level language, meaning it's easy to read and write.\n2. It's used for various applications, such as data analysis and web development.\n3. Python code is often shorter and more efficient than code in other languages.",
+    "model_used": "llama-3.1-8b-instant",
+    "tokens_used": 255
+  },
+  {
+    "id": "2026-02-15T21:58:31.970688",
+    "timestamp": "2026-02-15T21:58:31.970697",
+    "question": "what is java programmming?",
+    "processed_text": "java programmming",
+    "tokens": [
+      "java",
+      "programmming"
+    ],
+    "subject": "Computer Science",
+    "subject_confidence": 0.65,
+    "difficulty": "Easy",
+    "difficulty_confidence": 0.5251611347805807,
+    "explanation": "What is Java programming?\nJava programming is a way of writing computer code using the Java programming language. It is used to create software applications, mobile apps, and web applications. Java code is compiled into a format that can be run on any device that has a Java Virtual Machine (JVM).\n\nKey Points:\n1. Java is an object-oriented language.\n2. It is platform-independent, meaning it can run on any device with a JVM.\n3. Java is widely used for developing Android apps, web applications, and enterprise software.",
+    "model_used": "llama-3.1-8b-instant",
+    "tokens_used": 250
+  },
+  {
+    "id": "2026-02-15T22:15:31.304530",
+    "timestamp": "2026-02-15T22:15:31.304565",
+    "question": "what is chatgpt",
+    "processed_text": "chatgpt",
+    "tokens": [
+      "chatgpt"
+    ],
+    "subject": "Geography",
+    "subject_confidence": 0.20781072674112205,
+    "difficulty": "Easy",
+    "difficulty_confidence": 0.5251611347805807,
+    "explanation": "What is ChatGPT?\nChatGPT is a computer program that can have conversations with humans. It uses artificial intelligence to understand and respond to questions and statements. It can provide information, answer questions, and even create text.\n\nKey Points:\n1. It is a type of AI called a chatbot.\n2. It can understand and respond to natural language.\n3. It is designed to assist and communicate with humans.",
+    "model_used": "llama-3.1-8b-instant",
+    "tokens_used": 227
+  },
+  {
+    "id": "2026-02-15T22:16:29.180420",
+    "timestamp": "2026-02-15T22:16:29.180431",
+    "question": "what is reproduction",
+    "processed_text": "reproduction",
+    "tokens": [
+      "reproduction"
+    ],
+    "subject": "Geography",
+    "subject_confidence": 0.20781072674112205,
+    "difficulty": "Easy",
+    "difficulty_confidence": 0.5251611347805806,
+    "explanation": "What is reproduction?\nReproduction is the process by which living organisms produce offspring. This process involves the creation of new individuals, either sexually or asexually, to continue the species. It is essential for the survival and continuation of a species.\n\nKey Points:\n1. Reproduction involves the creation of new individuals.\n2. It can occur sexually or asexually.\n3. It is necessary for the survival and continuation of a species.\n\nExample: A plant reproduces by producing seeds, while an animal reproduces by laying eggs or giving birth to live young.",
+    "model_used": "llama-3.1-8b-instant",
+    "tokens_used": 253
+  },
+  {
+    "id": "2026-02-15T22:25:24.744513",
+    "timestamp": "2026-02-15T22:25:24.744543",
+    "question": "How many positive integers not exceeding 1000 are divisible by 7 or \n11?",
+    "processed_text": "many positive integer exceeding divisible",
+    "tokens": [
+      "many",
+      "positive",
+      "integer",
+      "exceeding",
+      "divisible"
+    ],
+    "subject": "Geography",
+    "subject_confidence": 0.20781072674112205,
+    "difficulty": "Easy",
+    "difficulty_confidence": 0.5251611347805806,
+    "explanation": "What is the number of positive integers not exceeding 1000 that are divisible by 7 or 11?\nThere are 143 positive integers not exceeding 1000 that are divisible by 7 or 11.\n\nKey Points:\n1. First, find the number of integers divisible by 7: 142 (since 1000/7 = 142.857, round down to 142).\n2. Next, find the number of integers divisible by 11: 90 (since 1000/11 = 90.909, round down to 90).\n3. However, some integers are divisible by both 7 and 11 (multiples of 77), so we need to subtract those to avoid double counting: 13 (since 1000/77 = 12.987, round down to 12, but we round up to 13 because 1000/77 is 12.987 which is more than 12).\n4. Finally, add the numbers divisible by 7 and 11, then subtract the number divisible by both: 142 + 90 - 13 = 219.",
+    "model_used": "llama-3.1-8b-instant",
+    "tokens_used": 384
+  },
+  {
+    "id": "2026-02-15T22:27:54.112940",
+    "timestamp": "2026-02-15T22:27:54.112950",
+    "question": "In a college, 1232 students have taken a course in Spanish, 879 in \nFrench, and 114 in Russian. Also, 103 students have taken both \nSpanish and French, 23 have taken both Spanish and Russian, and 14 \nhave taken both French and Russian. If 2092 students have taken at \nleast one of these three languages, how many students have taken \ncourses in all three languages?",
+    "processed_text": "college student taken course spanish french russian also student taken spanish french taken spanish russian taken french russian student taken least one three language many student taken course three language",
+    "tokens": [
+      "college",
+      "student",
+      "taken",
+      "course",
+      "spanish",
+      "french",
+      "russian",
+      "also",
+      "student",
+      "taken",
+      "spanish",
+      "french",
+      "taken",
+      "spanish",
+      "russian",
+      "taken",
+      "french",
+      "russian",
+      "student",
+      "taken",
+      "least",
+      "one",
+      "three",
+      "language",
+      "many",
+      "student",
+      "taken",
+      "course",
+      "three",
+      "language"
+    ],
+    "subject": "English",
+    "subject_confidence": 0.5409976567986458,
+    "difficulty": "Easy",
+    "difficulty_confidence": 0.5251611347805807,
+    "explanation": "What is the number of students who have taken courses in all three languages?\nTo find this, we can use the principle of inclusion-exclusion. We start by adding the total number of students in each course, then subtract the number of students who have taken both languages, and so on.\n\nKey Points:\n1. We add the total number of students in each course: 1232 (Spanish) + 879 (French) + 114 (Russian) = 2225.\n2. We subtract the number of students who have taken both languages: 103 (Spanish and French) + 23 (Spanish and Russian) + 14 (French and Russian) = 140.\n3. We add back the number of students who have taken all three languages (x), because they were subtracted three times: 2225 - 140 + x = 2085 + x.\n4. We know that 2092 students have taken at least one of these three languages, so we set up the equation: 2085 + x = 2092.\n5. Solving for x, we get x = 7.\n\nTherefore, 7 students have taken courses in all three languages.",
+    "model_used": "llama-3.1-8b-instant",
+    "tokens_used": 466
+  }
+]

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - EduSolve AI</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/navigation.css">
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-brand">
+                <span>🎓</span>
+                <span>EduSolve AI</span>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">
+                        <span>🏠</span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/dashboard" class="nav-link active">
+                        <span>📊</span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/features" class="nav-link">
+                        <span>✨</span>
+                        <span>Features</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/about" class="nav-link">
+                        <span>ℹ️</span>
+                        <span>About</span>
+                    </a>
+                </li>
+            </ul>
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation">☰</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="page-container">
+        <!-- Page Header -->
+        <div class="section-header">
+            <h1 class="section-title">📊 Your Learning Dashboard</h1>
+            <p class="section-subtitle">Track your progress, view analytics, and explore your question history</p>
+        </div>
+
+        <!-- Dashboard Stats Grid -->
+        <div class="dashboard-grid">
+            <div class="dashboard-card">
+                <div class="card-icon purple">📚</div>
+                <h3 class="card-title">Total Questions</h3>
+                <div class="card-value" id="dashTotalQuestions">0</div>
+                <p class="card-description">Questions you've explored</p>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="card-icon blue">🎯</div>
+                <h3 class="card-title">Subjects Covered</h3>
+                <div class="card-value" id="dashTotalSubjects">0</div>
+                <p class="card-description">Different subject areas</p>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="card-icon green">✅</div>
+                <h3 class="card-title">Learning Streak</h3>
+                <div class="card-value" id="dashAccuracy">0</div>
+                <p class="card-description">Your consistency score</p>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="card-icon orange">⭐</div>
+                <h3 class="card-title">Favorite Subject</h3>
+                <div class="card-value" id="dashPopularSubject" style="font-size: 1.5rem;">-</div>
+                <p class="card-description">Most explored topic</p>
+            </div>
+        </div>
+
+        <!-- Subject Badges -->
+        <div class="chart-container">
+            <div class="chart-header">
+                <h2 class="chart-title">📚 Subject Distribution</h2>
+            </div>
+            <div class="subject-badges" id="subjectBadges">
+                <!-- Dynamically populated -->
+            </div>
+        </div>
+
+        <!-- Difficulty Progress -->
+        <div class="chart-container">
+            <div class="chart-header">
+                <h2 class="chart-title">🎯 Difficulty Breakdown</h2>
+            </div>
+            <div class="progress-container" id="difficultyProgress">
+                <!-- Dynamically populated -->
+            </div>
+        </div>
+
+        <!-- Search and Filter Section -->
+        <div class="chart-container">
+            <div class="chart-header">
+                <h2 class="chart-title">🔍 Search & Filter History</h2>
+            </div>
+            
+            <div style="margin-bottom: 2rem;">
+                <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 1rem; margin-bottom: 2rem;">
+                    <input type="text" id="searchInput" placeholder="🔍 Search questions or explanations..." 
+                           style="padding: 1rem; border: 2px solid var(--border-color); border-radius: var(--border-radius); font-size: 1rem; font-family: inherit;">
+                    
+                    <select id="subjectFilter" style="padding: 1rem; border: 2px solid var(--border-color); border-radius: var(--border-radius); font-size: 1rem; font-family: inherit; background: white; cursor: pointer;">
+                        <option value="all">All Subjects</option>
+                        <option value="Mathematics">Mathematics</option>
+                        <option value="Physics">Physics</option>
+                        <option value="Chemistry">Chemistry</option>
+                        <option value="Biology">Biology</option>
+                        <option value="English">English</option>
+                        <option value="History">History</option>
+                        <option value="Geography">Geography</option>
+                    </select>
+                    
+                    <select id="difficultyFilter" style="padding: 1rem; border: 2px solid var(--border-color); border-radius: var(--border-radius); font-size: 1rem; font-family: inherit; background: white; cursor: pointer;">
+                        <option value="all">All Levels</option>
+                        <option value="Easy">Easy</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Hard">Hard</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Question History Timeline -->
+            <div class="timeline" id="historyTimeline">
+                <!-- Dynamically populated -->
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="/" class="btn-primary" style="display: inline-block; padding: 1.25rem 3rem; background: var(--purple-gradient); color: white; text-decoration: none; border-radius: var(--border-radius-xl); font-weight: 700; font-size: 1.1rem; box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4); transition: var(--transition-bounce);">
+                ✨ Ask a New Question
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 3rem 2rem; background: linear-gradient(135deg, #1e293b 0%, #334155 100%); color: white; margin-top: 4rem;">
+        <p style="font-size: 1rem; margin-bottom: 0.5rem;">🎓 <strong>EduSolve AI</strong> - Your AI Learning Companion</p>
+        <p style="font-size: 0.9rem; opacity: 0.8;">Powered by Groq AI & Machine Learning | © 2026 All Rights Reserved</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        const API_BASE_URL = 'http://localhost:5000/api';
+        
+        // Animate counter
+        function animateCounter(elementId, start, end, duration) {
+            const element = document.getElementById(elementId);
+            if (!element) return;
+            
+            const range = end - start;
+            const increment = range / (duration / 16);
+            let current = start;
+            
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= end) {
+                    element.textContent = Math.round(end);
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.round(current);
+                }
+            }, 16);
+        }
+    </script>
+    <script src="/static/js/dashboard.js"></script>
+    <script>
+        // Initialize dashboard
+        document.addEventListener('DOMContentLoaded', () => {
+            const dashboard = new Dashboard();
+            const searchFilter = new SearchFilter('historyTimeline');
+        });
+    </script>
+</body>
+</html>

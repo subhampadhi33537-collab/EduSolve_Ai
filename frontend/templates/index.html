@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduSolve AI - Intelligent Doubt Solver</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/navigation.css">
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+    <link rel="stylesheet" href="/static/css/home.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-brand">
+                <span>🎓</span>
+                <span>EduSolve AI</span>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="/" class="nav-link active">
+                        <span>🏠</span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/dashboard" class="nav-link">
+                        <span>📊</span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/features" class="nav-link">
+                        <span>✨</span>
+                        <span>Features</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/about" class="nav-link">
+                        <span>ℹ️</span>
+                        <span>About</span>
+                    </a>
+                </li>
+            </ul>
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation">☰</button>
+        </div>
+    </nav>
+
+    <!-- Floating Background Shapes -->
+    <div class="floating-shapes">
+        <div class="shape circle"></div>
+        <div class="shape square"></div>
+        <div class="shape circle"></div>
+        <div class="shape square"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero-wrapper">
+        <div class="home-container">
+            <!-- Hero Header -->
+            <header class="hero-header">
+                <h1 class="hero-title">
+                    <span class="gradient-text">🎓 EduSolve AI</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Your Intelligent AI-Powered Doubt Solver using Machine Learning & Generative AI
+                </p>
+                
+                <!-- Feature Pills -->
+                <div class="feature-pills">
+                    <div class="pill">⚡ Instant Answers</div>
+                    <div class="pill">🎯 Smart Classification</div>
+                    <div class="pill">🤖 AI-Powered</div>
+                    <div class="pill">📊 Track Progress</div>
+                </div>
+            </header>
+
+            <!-- Sample Subjects Display -->
+            <div class="sample-subjects-section">
+                <h3 class="sample-subjects-title">📚 Explore Subjects</h3>
+                <div class="sample-subjects-grid">
+                    <div class="sample-subject-card">
+                        <div class="subject-icon">📐</div>
+                        <h4>Mathematics</h4>
+                        <p>Algebra, Geometry, Calculus & more</p>
+                    </div>
+                    <div class="sample-subject-card">
+                        <div class="subject-icon">🔬</div>
+                        <h4>Physics</h4>
+                        <p>Mechanics, Waves, Relativity & more</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Input Card -->
+            <div class="main-input-card">
+                <div class="input-card-header">
+                    <h2 class="input-card-title">Ask Your Question</h2>
+                    <p class="input-card-subtitle">Get detailed explanations powered by advanced AI</p>
+                </div>
+
+                <div class="enhanced-input-group">
+                    <textarea 
+                        id="questionInput" 
+                        class="enhanced-textarea" 
+                        placeholder="Type your question here... Be as detailed as possible! 💭"
+                        rows="6"></textarea>
+                    <button id="submitBtn" class="enhanced-submit-btn" onclick="submitQuestion()">
+                        <span class="btn-content">🚀 Get Answer</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Response Section -->
+            <div id="responseSection" class="response-wrapper hidden-section">
+                <div class="response-grid">
+                    <!-- Question Card -->
+                    <div class="response-card-enhanced">
+                        <h3>📌 Your Question</h3>
+                        <p id="displayedQuestion" class="response-text"></p>
+                    </div>
+
+                    <!-- Classification Card -->
+                    <div class="response-card-enhanced">
+                        <h3>🏷️ Classification Results</h3>
+                        <div class="classification-tags">
+                            <div class="tag subject-tag">
+                                <span>📚 Subject:</span>
+                                <strong id="subjectResult">-</strong>
+                                <small id="subjectConfidence"></small>
+                            </div>
+                            <div class="tag difficulty-tag">
+                                <span>🎯 Difficulty:</span>
+                                <strong id="difficultyResult">-</strong>
+                                <small id="difficultyConfidence"></small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Explanation Card -->
+                    <div class="response-card-enhanced">
+                        <h3>💡 AI-Generated Explanation</h3>
+                        <div id="explanationContent" class="explanation-content"></div>
+                        <div class="metadata-info">
+                            <small id="timingInfo"></small>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="action-buttons">
+                        <button id="askAgainBtn" class="action-btn primary">🔄 Ask Another Question</button>
+                        <button id="downloadBtn" class="action-btn">📥 Download PDF</button>
+                        <button id="copyBtn" class="action-btn" onclick="copyExplanation()">📋 Copy Text</button>
+                        <button id="shareBtn" class="action-btn" onclick="shareExplanation()">📤 Share</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistics Section -->
+            <section class="stats-section">
+                <h2>📊 Platform Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number" id="totalQuestions">0</div>
+                        <div class="stat-label">Questions Asked</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="totalSubjects">0</div>
+                        <div class="stat-label">Subjects Covered</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="avgDifficulty">-</div>
+                        <div class="stat-label">Most Common Level</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>🎓 <strong>EduSolve AI</strong> - Your AI Learning Companion</p>
+            <p class="footer-note">Powered by Groq API & Machine Learning | © 2026 All Rights Reserved</p>
+            <p class="footer-shortcuts">
+                Shortcuts: Ctrl+Enter to submit | Ctrl+K to focus input | Ctrl+D for dashboard | Ctrl+H for home
+            </p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="/static/js/script.js"></script>
+    <script src="/static/js/dashboard.js"></script>
+    <script src="/static/js/features.js"></script>
+</body>
+</html>

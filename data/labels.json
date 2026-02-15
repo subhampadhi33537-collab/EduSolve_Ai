@@ -1,0 +1,16 @@
+{
+  "subjects": [
+    "Mathematics",
+    "Physics",
+    "Chemistry",
+    "Biology",
+    "English",
+    "History",
+    "Geography"
+  ],
+  "difficulties": [
+    "Easy",
+    "Medium",
+    "Hard"
+  ]
+}
