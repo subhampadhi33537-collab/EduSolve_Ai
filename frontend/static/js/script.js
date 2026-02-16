@@ -3,8 +3,8 @@
  * Handles API communication, UI interactions, and data display
  */
 
-// Configuration
-const API_BASE_URL = 'http://localhost:5000/api';
+// Configuration - Dynamically detect API URL based on environment
+const API_BASE_URL = window.location.origin + '/api';
 
 // DOM Elements
 const questionInput = document.getElementById('questionInput');
