@@ -12,10 +12,10 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'backend'))
 from backend.app import create_app
 from backend.config import Config
 
+# Create Flask app at module level (for Gunicorn)
+app = create_app()
+
 if __name__ == '__main__':
-    # Create Flask app
-    app = create_app()
-    
     print("""
     ╔════════════════════════════════════════════════════════╗
     ║           🚀 EduSolve AI - Starting Server 🚀          ║

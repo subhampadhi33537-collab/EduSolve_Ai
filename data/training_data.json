@@ -276,5 +276,21 @@
     "explanation": "What is the number of students who have taken courses in all three languages?\nTo find this, we can use the principle of inclusion-exclusion. We start by adding the total number of students in each course, then subtract the number of students who have taken both languages, and so on.\n\nKey Points:\n1. We add the total number of students in each course: 1232 (Spanish) + 879 (French) + 114 (Russian) = 2225.\n2. We subtract the number of students who have taken both languages: 103 (Spanish and French) + 23 (Spanish and Russian) + 14 (French and Russian) = 140.\n3. We add back the number of students who have taken all three languages (x), because they were subtracted three times: 2225 - 140 + x = 2085 + x.\n4. We know that 2092 students have taken at least one of these three languages, so we set up the equation: 2085 + x = 2092.\n5. Solving for x, we get x = 7.\n\nTherefore, 7 students have taken courses in all three languages.",
     "model_used": "llama-3.1-8b-instant",
     "tokens_used": 466
+  },
+  {
+    "id": "2026-02-16T08:10:32.092830",
+    "timestamp": "2026-02-16T08:10:32.092843",
+    "question": "what is pythin",
+    "processed_text": "pythin",
+    "tokens": [
+      "pythin"
+    ],
+    "subject": "Geography",
+    "subject_confidence": 0.20781072674112205,
+    "difficulty": "Easy",
+    "difficulty_confidence": 0.5251611347805807,
+    "explanation": "What is Python?\nPython is a high-level programming language used for developing a wide range of applications, including web development, data analysis, artificial intelligence, and more. It is known for its simplicity, readability, and ease of use.\n\nKey Points:\n1. Python is an object-oriented language.\n2. It supports multiple programming paradigms, including procedural and functional programming.\n3. Python has a vast and active community, with numerous libraries and frameworks available.\n\nExample: You can use Python to create a simple calculator or a game like Tic-Tac-Toe.",
+    "model_used": "llama-3.1-8b-instant",
+    "tokens_used": 254
   }
 ]
