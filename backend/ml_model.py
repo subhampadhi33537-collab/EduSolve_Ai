@@ -14,6 +14,7 @@ from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import LabelEncoder
 from sklearn.svm import LinearSVC
+from sklearn.dummy import DummyClassifier
 from preprocess import preprocess_input
 
 class MLModel:
@@ -38,7 +39,7 @@ class MLModel:
         self.vectorizer = TfidfVectorizer(
             max_features=200,
             ngram_range=(1, 3),
-            min_df=2,
+            min_df=1,
             max_df=0.95,
             lowercase=True,
             stop_words='english'
@@ -85,7 +86,7 @@ class MLModel:
                     ('tfidf', TfidfVectorizer(
                         max_features=200,
                         ngram_range=(1, 3),
-                        min_df=2,
+                        min_df=1,
                         max_df=0.95,
                         lowercase=True,
                         stop_words='english'
@@ -103,7 +104,7 @@ class MLModel:
                     ('tfidf', TfidfVectorizer(
                         max_features=150,
                         ngram_range=(1, 2),
-                        min_df=2,
+                        min_df=1,
                         max_df=0.95,
                         lowercase=True
                     )),
@@ -239,7 +240,23 @@ class MLModel:
             ]
             sample_labels = ['Easy', 'Medium', 'Hard']
         
-        self.train(sample_texts, sample_labels)
+        try:
+            self.train(sample_texts, sample_labels)
+        except Exception as e:
+            print(f"❌ Error training default model: {str(e)}")
+            # Use DummyClassifier as fallback - don't recurse
+            self.model = Pipeline([
+                ('tfidf', TfidfVectorizer(
+                    max_features=100,
+                    ngram_range=(1, 2),
+                    min_df=1,
+                    max_df=1.0
+                )),
+                ('clf', DummyClassifier(strategy='prior'))
+            ])
+            self.model.fit(sample_texts, sample_labels)
+            self.is_trained = True
+            print(f"✅ Default {self.model_type} model ({sample_labels}) ready as fallback")
 
 class SubjectClassifier(MLModel):
     """Subject classification model"""
